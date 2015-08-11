@@ -32,9 +32,9 @@ private:
 	}
 
 	static void* _exec_self(void* tmpf) {
-			reinterpret_cast<Thread*> (tmpf)->run();
-			return (void*) 0;
-		}
+		reinterpret_cast<Thread*> (tmpf)->run();
+		return (void*) 0;
+	}
 public:
 	Thread() {
 		this->_running = false;
